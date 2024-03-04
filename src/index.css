@@ -1,0 +1,27 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url(src\assets\Fonts\Helvetica-Font\Helvetica.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Helvetica Bold';
+  src: url(src\assets\Fonts\Helvetica-Font\Helvetica-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Helvetica Light';
+  src: url(src\assets\Fonts\Helvetica-Font\helvetica-light-587ebe5a59211.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'OffWhite';
+  src: url(src\assets\Fonts\Bookish_Trials\BookishTrial-Book.otf) format('truetype');
+}
+@font-face {
+  font-family: 'OffWhite Italic';
+  src: url(src\assets\Fonts\Bookish_Trials\BookishTrial-Italic.otf) format('truetype');
+}
