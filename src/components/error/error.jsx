@@ -1,8 +1,8 @@
-const Videos = () => {
+const Error = () => {
     return (
         <>
         </>
     )
 }
 
-export default Videos
+export default Error

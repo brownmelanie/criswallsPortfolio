@@ -25,3 +25,7 @@
   font-family: 'OffWhite Italic';
   src: url(src\assets\Fonts\Bookish_Trials\BookishTrial-Italic.otf) format('truetype');
 }
+
+body{
+  background-color: rgb(27, 27, 27);
+}
