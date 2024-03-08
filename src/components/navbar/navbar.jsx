@@ -38,11 +38,11 @@ const Navbar = () => {
                     }
                     
                 </div>
-                <ul className={`absolute flex flex-col justify-end z-10 top-20 p-4 px-9 text-right rounded-b-md duration-200 ease-in ${open ? 'right-0' : ' right-[-250px]'}`}>
+                <ul className={`absolute flex flex-col justify-end z-10 top-20 p-4 px-9 text-right duration-200 ease-in ${open ? 'right-0' : ' right-[-250px]'}`}>
                     {
                         Links.map((link) => (
                             <li key={link.href} className='md:ml-8 md:my-5 my-5 font-Helvetica'>
-                                <a href={link.link}className='text-gray-800 hover:text-gray-500 duration-300 text-stone-50'>{link.name}</a>
+                                <a href={link.link}className='text-black/75 hover:text-gray-500 duration-300 text-stone-50'>{link.name}</a>
                             </li>))
                     }
                 </ul>
