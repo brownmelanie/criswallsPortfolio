@@ -20,12 +20,12 @@ const Navbar = () => {
 
     return (
         <nav className='z-10 absolute w-screen border border-solid border-x-transparent border-t-transparent border-b-gray-800'>
-            <div className='flex items-center justify-between bg-transparent md:px-7 px-7 h-13 py-6'>
-                <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
+            <div className='flex items-center justify-between bg-transparent md:pl-9 md:pr-16 px-6 h-13 py-6'>
+                <div className='font-bold md:text-2xl text-xl cursor-pointer flex items-center gap-1'>
                     <h2 className=' text-gray-800 font-Helvetica'>CRISWALLS</h2>
                 </div>
-                <div className=' flex flex-row items-center gap-x-5'>
-                    <Link to="#" className=' text-gray-900 font-semibold cursor-pointer hover:text-gray-500 duration-300'>W O R K S</Link>
+                <div className=' flex flex-row items-center gap-x-10'>
+                    <Link to="#" className=' text-gray-900 font-semibold md:text-base text-sm cursor-pointer hover:text-gray-500 duration-300'>W O R K S</Link>
                     { open 
                     ?
                     <button className='' onClick={toggleButton}>
@@ -33,16 +33,16 @@ const Navbar = () => {
                     </button>
                     :
                     <button className='' onClick={toggleButton}>
-                        <Bars2Icon className=' text-gray-800  w-6 h-auto' /> 
+                        <Bars2Icon className=' text-gray-800 w-6 h-auto' /> 
                     </button>
                     }
                     
                 </div>
-                <ul className={`absolute flex flex-col justify-end z-10 top-20 p-4 px-9 text-right duration-200 ease-in ${open ? 'right-0' : ' right-[-250px]'}`}>
+                <ul className={`fixed top-20 p-4 px-7 md:pr-14 text-right duration-200 ease-in ${open ? 'right-0' : 'md:right-[-250px] right-[-190px]'}`}>
                     {
                         Links.map((link) => (
-                            <li key={link.href} className='md:ml-8 md:my-5 my-5 font-Helvetica'>
-                                <a href={link.link}className='text-black/75 hover:text-gray-500 duration-300 text-stone-50'>{link.name}</a>
+                            <li key={link.href} className='md:ml-8 md:my-5 my-4 font-Helvetica md:text-base text-sm'>
+                                <a href={link.link}className='text-black hover:text-gray-500 duration-300'>{link.name}</a>
                             </li>))
                     }
                 </ul>
