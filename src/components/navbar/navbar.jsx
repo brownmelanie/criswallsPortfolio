@@ -19,30 +19,30 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='bg-stone-800'>
+        <nav className='z-10 absolute w-screen border border-solid border-x-transparent border-t-transparent border-b-gray-800'>
             <div className='flex items-center justify-between bg-transparent md:px-7 px-7 h-13 py-6'>
                 <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-                    <h2 className=' text-stone-50 font-Helvetica'>CRISWALLS</h2>
+                    <h2 className=' text-gray-800 font-Helvetica'>CRISWALLS</h2>
                 </div>
                 <div className=' flex flex-row items-center gap-x-5'>
-                    <Link to="#" className=' text-stone-50 cursor-pointer hover:text-stone-400 duration-300'>W O R K S</Link>
+                    <Link to="#" className=' text-gray-900 font-semibold cursor-pointer hover:text-gray-500 duration-300'>W O R K S</Link>
                     { open 
                     ?
                     <button className='' onClick={toggleButton}>
-                        <XMarkIcon className=' text-stone-50 w-6 h-auto' />
+                        <XMarkIcon className=' text-gray-800 w-6 h-auto' />
                     </button>
                     :
                     <button className='' onClick={toggleButton}>
-                        <Bars2Icon className=' text-stone-50  w-6 h-auto' /> 
+                        <Bars2Icon className=' text-gray-800  w-6 h-auto' /> 
                     </button>
                     }
                     
                 </div>
-                <ul className={`bg-stone-800 absolute flex flex-col justify-end z-10 top-20 p-4 px-9 text-right rounded-b-md duration-150 ease-in ${open ? 'right-0' : ' right-[-199px]'}`}>
+                <ul className={`absolute flex flex-col justify-end z-10 top-20 p-4 px-9 text-right rounded-b-md duration-200 ease-in ${open ? 'right-0' : ' right-[-250px]'}`}>
                     {
                         Links.map((link) => (
-                            <li key={link.href} className='md:ml-8 md:my-5 my-5 font-Helvetica font-semibold'>
-                                <a href={link.link}className='text-neutral-800 hover:text-neutral-500 duration-300 text-stone-50'>{link.name}</a>
+                            <li key={link.href} className='md:ml-8 md:my-5 my-5 font-Helvetica'>
+                                <a href={link.link}className='text-gray-800 hover:text-gray-500 duration-300 text-stone-50'>{link.name}</a>
                             </li>))
                     }
                 </ul>
