@@ -52,10 +52,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{/*
-<button className='btn bg-blue-600 text-white py-1 px-3 md:ml-8 rounded md:static'>
-
-
-                <ul  className={`z-10 md:pb-0 pb-0 pr-8 absolute md:absolute bg-transparent md:z-10 left-0 w-full md:w-full md:pl-9 pl-9 transition-all duration-00 ease-in ${open ? 'text-right pt-6 top-14 pr-10' : 'text-right top-[-490px]'}`}>
-*/}

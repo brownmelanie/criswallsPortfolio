@@ -2,40 +2,41 @@ export const data = [
     {
         title: 'img1',
         value: 0,
-        height: 32,
+        img: 'src/assets/Grid/bigsoto.png'
     },
     {
         title: 'img2',
         value: 1,
-        height: 42,
+        img: 'src/assets/Grid/diabolica.jpg'
     },
     {
         title: 'img3',
         value: 2,
-        height: 54,
+        img:'src/assets/Grid/diluvio.png'
     },
     {
         title: 'img4',
         value: 3,
-        height: 34,
+        img:'src/assets/Grid/emilia.png'
     },
     {
         title: 'img5',
         value: 4,
-        height: 34,
+        img:'src/assets/Grid/free.png'
     },
     {
         title: 'img6',
         value: 5,
-        height: 34,
+        img:'src/assets/Grid/ohdulceari.png'
     },
     {
         title: 'img7',
         value: 6,
-        height: 34,
+        img:'src/assets/Grid/serotonina.png'
     },
     {
         title: 'img8',
-        value: 7
+        value: 7,
+        img:'src/assets/Grid/santorini.png'
     }
 ]

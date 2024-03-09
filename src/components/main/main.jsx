@@ -4,7 +4,7 @@ import img  from '../../assets/khea.png'
 import { data } from '../data/data';
 
 const Main = () => {
-    const styleGrid = 'bg-neutral-200 border-solid border-2 rounded-sm border-gray-300 p-2 flex flex-col items-center justify-center';
+    const styleGrid = 'flex flex-col items-center justify-center';
 
   return (
     <div>
@@ -14,13 +14,11 @@ const Main = () => {
             </Parallax>
         </div>
 
-    {/*GRID, a las img poner object-fit:cover*/}
-        <div className='max-w-7xl mx-auto'>
-            <div className='grid md:grid-cols-4 auto-rows-[18.75rem] gap-4 my-10 mx-6'>
+        <div className='max-w-screen mx-auto mt-24'>
+            <div className='grid md:grid-cols-4 auto-rows-[18.75rem] gap-0'>
                 {data.map((item, i) => (
                     <div key={i} className={`${styleGrid} ${i=== 0 || i === 4 || i === 6 || i=== 7 ? 'md:col-span-2' : ''}`}>
-                        <h2 className='text-xl text-gray-600'>{item.title}</h2>
-                        <p className='font-bold text-2xl'>{item.value}</p>
+                        <img src={item.img} alt={item.title} className='w-full h-full object-cover hover:opacity-50 transition-opacity duration-300'/>
                     </div>
                 ))}
             </div>
